@@ -8,7 +8,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref ,watch} from "vue";
 import { useRoute,type RouteLocationMatched } from "vue-router";
 
 const breadcrumbs = ref([] as Array<RouteLocationMatched>);
@@ -29,6 +29,13 @@ function getBreadcrumb() {
 
 
 getBreadcrumb();
+
+watch(
+  () => currentRoute.path,
+  (path) => {
+    getBreadcrumb();
+  }
+);
 
 </script>
 <style scope lang="scss">

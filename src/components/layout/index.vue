@@ -18,13 +18,8 @@
 </template>
 <script setup lang="ts">
 import breadcrumb from '@/components/breadcrumb/index.vue'
-
 import leftmenu from '@/components/leftMenu/index.vue'
-
 import tag from '@/components/TagsView/index.vue'
-
-
-
 
 </script>
 <style  scope lang="scss">
@@ -40,7 +35,9 @@ import tag from '@/components/TagsView/index.vue'
         border: 1px solid #E5E7ED;
     }
 
-   
+    .el-main{
+        background: #F2F3F5;
+    }
 
 }
 </style>

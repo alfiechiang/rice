@@ -1,12 +1,15 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
-  <RouterView />
+  <el-config-provider :locale="locale">
+    <RouterView />
+  </el-config-provider>
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import { RouterView } from 'vue-router'
+import zhTw from 'element-plus/dist/locale/zh-tw.mjs'
+const locale = zhTw 
+</script>
 
-</style>
+<style scoped></style>

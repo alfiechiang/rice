@@ -27,6 +27,8 @@ const addTag = () => {
     let contains = false;
     dynamicTags.value.forEach((item, v) => {
         if (item.name == currentRoute.meta.title) {
+            dynamicTags.value.forEach((ob) => {ob.type = 'info';})
+            item.type='';
             contains = true;
         }
     })
@@ -43,6 +45,10 @@ const handleClose = (tagName: string) => {
     if (indexToRemove !== -1) {
         dynamicTags.value.splice(indexToRemove, 1);
     }
+    let lastIndex=dynamicTags.value.length-1;
+    let item=dynamicTags.value[lastIndex];
+    item.type='';
+    router.push({path: item.path,});
 }
 
 const handleClick = (item: TagItem) => {
