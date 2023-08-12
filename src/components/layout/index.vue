@@ -8,9 +8,7 @@
                 <el-header height="50px">
                     <breadcrumb></breadcrumb>
                 </el-header>
-                <div class="tag">
                     <tag></tag>
-                </div>
                 <el-main>
                     <router-view></router-view>
                 </el-main>
@@ -42,11 +40,7 @@ import tag from '@/components/TagsView/index.vue'
         border: 1px solid #E5E7ED;
     }
 
-    .tag {
-        width: 100%;
-        height: 30px;
-        border-bottom: 1px solid #E5E7ED;
-    }
+   
 
 }
 </style>
