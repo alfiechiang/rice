@@ -40,7 +40,7 @@ watch(
 </script>
 <style scope lang="scss">
 #bread {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
