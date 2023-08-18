@@ -1,7 +1,7 @@
 <template>
    <div id="login">
       <el-form class="login-form">
-         <h1 style="text-align: center;margin-bottom: 20px;">AXC 觀禮系統</h1>
+         <h1 style="text-align: center;margin-bottom: 20px;">AXC 系統</h1>
          <el-form-item>
             <div class="p-2">
                <el-icon>
@@ -36,7 +36,7 @@
       width: 500px;
       height: 200px;
       margin-top: 200px;
-
+      
       .el-form-item {
          background: rgb(0 0 0 / 10%);
          border: 1px solid rgb(255 255 255 / 10%);
