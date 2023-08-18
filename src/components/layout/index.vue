@@ -8,15 +8,11 @@
                 <el-header height="50px">
                     <breadcrumb></breadcrumb>
                     <div class="right-header">
-                        
                         <el-dropdown>
-
                             <div class="icon-area">
                                 <img class="avatar-img" src="https://oss.youlai.tech/youlai-boot/2023/05/16/811270ef31f548af9cffc026dfc3777b.gif?imageView2/1/w/80/h/80">
                                 <el-icon><ArrowDown /></el-icon>
                             </div>
-
-                           
                             <template #dropdown>
                                 <el-dropdown-menu>
                                     <el-dropdown-item>Action 1</el-dropdown-item>
